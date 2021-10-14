@@ -738,7 +738,10 @@ footer a{
     }
 }
 
-@media(max-width: 344px) {
+@media (max-width:560px) {
+    .modalForm label {
+        flex-direction: column;
+    }
     .logo {
         display: none;
     }
@@ -746,11 +749,8 @@ footer a{
         font-size: 25px !important;
         margin-left: 20px;
     }
-}
-
-@media (max-width:560px) {
-    .modalForm label {
-        flex-direction: column;
+    .fa-bars{
+        font-size: 26px;
     }
 
 }
