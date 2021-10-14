@@ -1,0 +1,523 @@
+x<!doctype html>
+<html lang="en">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  <title>Wedding Organoser</title>
+    <!-- Fav Icon -->
+  <link rel="icon" href="favlogo.png">
+  <!-- my CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+ 
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-xl navbar- myBg px-lg-3 fixed-top myBs">
+    <div class="container-fluid px-0">
+      <a class="navbar-brand pt-2" href="index.html">
+        <h1 class="h1 text-white fw-bold"><img src="images/logo.png" class="ms-2 logo" height="40" width="37" alt="">
+          Moon Events
+        </h1>
+      </a>
+      </a>
+      <button class="navbar-toggler px-1 mx-2 py-1 px-sm-2 text-white" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+
+        <span class="fas fa-bars"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center pb-4 py-lg-0" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-lg-0 mb-4 h4 text-center">
+          <li class="nav-item px-lg-2">
+            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown px-lg-3">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu px-md-3" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="about/aboutCompany.html">Company Introduction</a></li>
+              <li><a class="dropdown-item" href="about/aboutOurteam.html">Our Team Members</a></li>
+              <li><a class="dropdown-item" href="about/aboutOurclients.html">Our Clients</a></li>
+
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown px-lg-3">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu px-md-3" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="services/servicesWedplanner.html">Wedding Planner Services</a></li>
+              <li><a class="dropdown-item" href="services/servicesCatering.html">Exclusive Catering Services</a></li>
+              <li><a class="dropdown-item" href="services/servicesThemedecors.html">Conceptual Theme Decorations</a></li>
+              <li><a class="dropdown-item" href="services/servicesPhotography.html">Cinematic Shoot & Still Photography</a></li>
+              <li><a class="dropdown-item" href="services/sevicesDjetc.html">D.J's Lighting & Entertainment</a></li>
+              <li><a class="dropdown-item" href="services/servicesCoperateevents.html">Corporate Events</a></li>
+              <li><a class="dropdown-item" href="services/servicesSupriseparty.html">Surprise Parties</a></li>
+              <li><a class="dropdown-item" href="services/servicesBirthday.html">Birthday Parties</a></li>
+              <li><a class="dropdown-item" href="services/servicesACmanagement.html">Artist / Celebrity Management</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown px-lg-3">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Gallery
+            </a>
+            <ul class="dropdown-menu px-md-3" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="gallery/galleryPhoto.html">Photo Gallery</a></li>
+              <li><a class="dropdown-item" href="gallery/galleryVideo.html">Video Gallery</a></li>
+
+            </ul>
+          </li>
+         
+          <li class="nav-item px-lg-2">
+            <a class="nav-link text-white" href="contactus.html">Contact us</a>
+          </li>
+
+        </ul>
+
+        <button class=" me-lg-3  px-lg-4 py-lg-2 px-5" href="#" data-bs-toggle="modal"
+          data-bs-target="#mymodal">Enquiry</button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Modal Starts -->
+  <div class="modal fade" id="mymodal">
+    <div class="modal-dialog">
+      <div class="modal-content ">
+        <div class="modal-header border-0">
+          <h5 class="text-white text-center display-5 fw-bold">Enter Your Details</h5>
+          <i class="bi bi-x-lg h5  text-white" data-bs-dismiss="modal"></i>
+        </div>
+        <div class="modal-body f-flex flex-column justify-content-center">
+          <!-- Modal Form -->
+          <form class="modalForm">
+            <label class="d-flex justify-content-center ">
+              Name<input type="text">
+            </label>
+            <label class="d-flex justify-content-center ">
+              Email<input type="email">
+            </label>
+            <label class="d-flex justify-content-center ">
+              Number<input type="number">
+            </label>
+            <label class="d-flex justify-content-center ">
+              Select Pakage for you
+              <select>
+                <option value="">Little Wedding</option>
+                <option value="">Big Wedding</option>
+                <option value="">Amazing Wedding</option>
+              </select>
+            </label>
+
+            <label class="d-flex justify-content-center ">
+              <textarea>Write message to us.. </textarea>
+            </label>
+            <label class="d-flex justify-content-center ">
+              <button>Send Request</button>
+            </label>
+          </form>
+          <!-- modal form ends -->
+        </div>
+        <div class="modal-footer border-0">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal Ends -->
+
+  <!-- Main text  startingBox Section starts from here -->
+  <section class="container-fluid startingBox">
+    <div class="row">
+      <div class="col-12 text-center text-white">
+        <h2 class="display-3 mt-lg-5">
+          Plan the Best Events & Weddings
+        </h2>
+        <h3 class="h2 mt-5">Creative Wedding</h3>
+      </div>
+      <div class="col-12"></div>
+    </div>
+  </section>
+
+  <!-- Welcome Section Starts here -->
+  <section class="container-fluid welcomeBox">
+    <div class="row justify-content-evenly py-5 px-2">
+      <div class="col-md-3 mt-5 d-flex align-items-end justify-content-center">
+        <h6>Flower Design</h6>
+      </div>
+      <div class="col-md-4 mt-5 text-center pt-5">
+        <h4 class="h1 ">Welcome</h4>
+        <h5 class="h1 my-5">Your wedding will be the most important event in your life</h5>
+        <a class="ownBtn " href="#">Read more</a>
+      </div>
+      <div class="col-md-3 mt-5 d-flex align-items-end justify-content-center">
+        <h6>Interior Decoration</h6>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Packages Section Starts from here -->
+  <section class="container-fluid packageCards mb-5">
+    <div class="row justify-content-evenly p-3 px-sm-5 ">
+      <div class="col-lg-3 mt-3 col-8">
+        <h5>Little Wedding</h5>
+        <p>This package is made for Little Wedding Arrangement and Functions </p>
+        <h4 class="text-center display-3 fw-bold">1800 <span>$</span></h4>
+        <ul>
+          <li>Wedding Decoration</li>
+          <li>Maintenance</li>
+          <li>Fresh Food</li>
+          <li>Free Buffet</li>
+        </ul>
+        <div class="d-flex justify-content-center">
+          <a class="ownBtn mt-5" href="#">Book Now</a>
+
+        </div>
+      </div>
+      <div class="col-lg-3 mt-3 col-4">
+        <h5>Big Wedding</h5>
+        <p>This package is made for Big Wedding Arrangement and Funntion and all</p>
+        <h4 class="text-center display-3 fw-bold">2500 <span>$</span></h4>
+        <ul>
+          <li>Free Flowers</li>
+          <li>Wedding Decoration</li>
+          <li>Maintenance</li>
+          <li>Fresh Food</li>
+          <li>Free Buffet</li>
+        </ul>
+        <div class="d-flex justify-content-center">
+          <a class="ownBtn mt-4" href="#">Book Now</a>
+
+        </div>
+      </div>
+      <div class="col-lg-3 mt-3 col-12">
+        <h5>Amazing Wedding</h5>
+        <p>This package is made for Amazing Wedding Arrangement and Funntion with our Luxury Services</p>
+        <h4 class="text-center display-3 fw-bold">3200 <span>$</span></h4>
+        <ul>
+          <li>Free Flowers</li>
+          <li>Wedding Decoration</li>
+          <li>Maintenance</li>
+          <li>Fresh Food</li>
+          <li>Free Buffet</li>
+          <li>luxury Arrangement</li>
+        </ul>
+        <div class="d-flex justify-content-center">
+          <a class="ownBtn" href="#">Book Now</a>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Pre Booking and Create best wedding section -->
+  <section class="container-fluid bestWedding">
+    <div class="row pt-5">
+      <div class="col text-center text-white">
+        <h6 class="display-6 ">Create Your Wedding Best with Us.</h6>
+        <p class="h2 mt-5 px-sm-5 mx-sm-5 my-5">You can Send request to us for Advance Booking , Custom Decorations and
+          Function Arrangements Our Team Will Contact . </p>
+        <button class="ownBtn" data-bs-toggle="modal" data-bs-target="#mymodal">Send Request</button>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- our Experience Section -->
+  <section class="container-fluid ourExp px-md-5 px-4 rounded my-4 pt-2">
+    <div class="row py-5 ">
+      <div class="col ">
+        <h5 class="tColor display-4 text-center fw-bold">
+          Our experience
+        </h5>
+        <p>Our Wedding Plans And Our Services are Best Pre Preparations, DJ/Music, Venue Booking, Decor, Photography
+          Services, Honeymoon, Service Staff, Invitations, Catering, PR and Media Coverage, Gifts, Celebrity Invites etc
+
+        </p>
+      </div>
+    </div>
+    <div class="row px-lg-5 px-0">
+      <div class="col-xl-3 col-md-6">
+        <img src="images/ni1.jpg" class="image-fluid" alt="">
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <img src="images/ni2.jpg" class="image-fluid" alt="">
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <img src="images/ni3.jpg" class="image-fluid" alt="">
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <img src="images/ni4.jpg" class="image-fluid" alt="">
+      </div>
+    </div>
+    <div class="row  px-lg-5 px-0">
+      <div class="col-xl-3 col-md-6">
+        <img src="images/ni9.jpg" class="image-fluid" alt="">
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <img src="images/ni6.jpg" class="image-fluid" alt="">
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <img src="images/ni10.jpg" class="image-fluid" alt="">
+      </div>
+      <div class="col-xl-3 col-md-6">
+        <img src="images/ni8.jpg" class="image-fluid" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- testimonal section -->
+  <section class="container-fluid testimonal my-5">
+    <div class="row text-center my-3">
+      <h5 class="display-3 fw-bold">Testimonals</h5>
+    </div>
+    <div class="row">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col">
+                <img src="images/tc1.jpg" alt="">
+                <h6>Nidhi Pathak</h6>
+              </div>
+            </div>
+            <p>Moon events is one of the best professional wedding planners in Jaipur at least for me. The thing which I
+              like most about them is their response time. We all know that making arrangements at the wedding is a
+              hectic job and we want someone to handle the same on our behalf .</p>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col">
+                <img src="images/tc2.jpg" alt="">
+                <h6>Vivek Kumar</h6>
+              </div>
+            </div>
+            <p>We were fortunate to getMoon Events as our planner. I am a very particular person and Moon
+              team went out of their way to make sure everything was perfect and went precisely as planned. The team is
+              very attentive and is extremely thorough. They did so much work with my vendors behind the scenes . </p>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col">
+                <img src="images/tc3.jpg" alt="">
+                <h6>Ekta Sharma</h6>
+              </div>
+            </div>
+            <p> Moom Events Team is Highly professional and well-experienced team with great ideas and enthusiasm. I
+              would recommend them 100% without any second thought as they are very professional at what they do and
+              organizes the event in the most mesmerizing manner.
+              Kudos to the entire team .</p>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- important Event Section Starts from here -->
+  <section class="container-fluid imptEvent my-5">
+    <div class="row">
+      <div class="col text-center">
+        <h6 class="display-6 fw-bold ">Your wedding will be the most important event in your life</h6>
+      </div>
+    </div>
+
+    <div class="row justify-content-evenly text-center pt-4">
+      <div class="col-md-5 mt-3">
+        <h6 class="h3 fw-bold">Event Planing and Services</h6>
+        <p>Venue selection, catering, photography/ Videography, styling & grooming, decoration, dJ & entertainment,
+          guests transfers, hospitality & guests support, invitations, wedding cake, trousseau packing, band & baraat
+          According to your Religion , flexibily and
+          Special Demand.
+        </p>
+        <img src="images/gift.jpg" alt="">
+      </div>
+      <div class="col-md-5 mt-3">
+        <h6 class="h3 fw-bold ">
+          Decoration of tables</h6>
+        <p>
+          Hoping for something entirely romantic? Go for plenty of blooms! An entire garland spanning the length of the
+          table adds such a lush touch as a gorgeous centerpiece .Consider displaying tall vases filled with long
+          branches of cherry blossoms for a beautiful look.
+        </p>
+        <img src="images/tabledeco.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="container ourTeam my-5">
+    <div class="row">
+      <div class="col">
+        <h6>Our Team</h6>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-lg-3 col-sm-6 col-12 text-center">
+        <img src="images/pro1.jpg" alt="">
+        <h5>Karan Malhotra</h5>
+        <h6>Manager</h6>
+      </div>
+      <div class="col-lg-3 col-sm-6 col-12 text-center">
+        <img src="images/pro2.jpg" alt="">
+        <h5>Vivek Kumar</h5>
+        <h6>Designer</h6>
+      </div>
+      <div class="col-lg-3 col-sm-6 col-12 text-center">
+        <img src="images/pro3.jpg" alt="">
+        <h5>Jassreet Chohan</h5>
+        <h6>Illustrator</h6>
+      </div>
+      <div class="col-lg-3 col-sm-6 col-12 text-center">
+        <img src="images/pro4.png" alt="">
+        <h5>Manoj Khanna</h5>
+        <h6>Senior Manager</h6>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Our Clients and Partners -->
+  <section class="container ourClients">
+    <div class="row ">
+      <div class="col text-center">
+        <h6>Our Clients & Parthners</h6>
+      </div>
+    </div>
+    <div class="row justify-content-center align-items-center pt-sm-5 pt-2">
+      <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+        <img src="images/op1.png" alt="">
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+        <img src="images/op2.png" alt="">
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+        <img src="images/op3.png" alt="">
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+        <img src="images/op4.png" alt="">
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+        <img src="images/op5.png" alt="">
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+        <img src="images/op6.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- map Section Starts here -->
+  <section class="container-fluid my-5 mapsec">
+    <div class="row">
+      <div class="col">
+        <h6 class="display-5 text-center fw-bold">Visit Us</h6>
+      </div>
+    </div>
+    <div class="row justify-content-center pt-5">
+      <div class="col-sm-9 col-11 d-flex justify-content-center">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109782.86712286324!2d76.6273401892007!3d30.698305207474135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fee906da6f81f%3A0x512998f16ce508d8!2sSahibzada%20Ajit%20Singh%20Nagar%2C%20Punjab!5e0!3m2!1sen!2sin!4v1633609946151!5m2!1sen!2sin"
+          class="gMap" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container-fluid ">
+    <div class="row text-white text-center p-3 ">
+      <div class="col-sm-4">
+        <h6>Get In Touch</h6>
+        <p>Moonweddings@gmail.com <br>
+          (+91) 97816-00101
+          (+91) 93935-00002</p>
+      </div>
+      <div class="col-sm-4">
+        <h6>Address</h6>
+        <p>Moon Events & Wedding Planners,
+          Vikas Nagar SAS Nagar (Mohali) , 140122 , Punjab (INDIA)</p>
+      </div>
+      <div class="col-sm-4">
+        <h6>Social Links</h6>
+        <div>
+          <span>
+            <a href="https://www.facebook.com">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.twitter.com">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+<div class="main-bttn">
+                     <a href="" class="animated-button1" data-toggle="modal" data-target="#myModal">
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     <span></span>
+                     Online Booking
+                     </a>
+                  </div>
+</body>
+
+</html>

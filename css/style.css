@@ -1,0 +1,803 @@
+
+
+.signinbg {
+    height: 100vh;
+    width: 100%;
+    background: red;
+    background-image: url(../images/wedbg.jpg);
+    background-size: cover;
+    background-color: black;
+    font-family: 'Baloo 2';
+    background-attachment: fixed;
+}
+
+.signupbg {
+    height: 100vh;
+    width: 100%;
+}
+
+.signinbg h1 {
+    text-align: center;
+    margin-top: 12px;
+    color: #860536;
+    font-weight: 700;
+    font-family: 'Courgette';
+    font-size: 40px;
+}
+
+.boxeffect {
+    border-top: 3px solid rgb(255 255 255 / 30%);
+    border-left: 3px solid rgb(255 255 255 / 30%);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+}
+
+.signinbg form {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.signinbg form h3 {
+    text-align: center;
+    font-weight: 600;
+    color: #860505;
+}
+
+.signinbg form label {
+    color: #860586;
+    font-size: 21px;
+    padding: 0px;
+    font-weight: 600;
+}
+
+.signinbg form label span {
+    color: red;
+    font-weight: 400;
+    margin-left: 40px;
+    font-size: 17px;
+}
+
+.signinbg form input {
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 3px solid #860505;
+    margin-bottom: 10px;
+    font-size: 19px;
+    font-weight: 700;
+    color:#b639ff;
+}
+
+form>div>div>a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+form>div>div>a:hover {
+    color: rgb(114, 4, 64);
+}
+
+form b {
+    color: rgb(37, 44, 58);
+}
+
+.mybtn {
+    text-decoration: none;
+    background: linear-gradient(90deg, rgba(169, 1, 70, 1) 0%, rgba(123, 6, 155, 1) 100%);
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 30px;
+    color: white !important;
+    width: 9rem;
+    padding: 4px;
+    font-size: 24px;
+    font-weight: bold;
+    border: 2px solid rgba(30, 143, 255, 0);
+}
+
+.mybtn:hover {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.39);
+    color:#700586 !important;
+    transform: scale(.98);
+    transition-duration: 200ms;
+    background: transparent !important;
+    border: 2px solid #820586 !important;
+}
+
+.gender {
+    color:#b639ff !important;
+}
+
+/* Index.html CSS Starts here */
+
+/* navigation  */
+
+nav {
+    background: linear-gradient(90deg, rgba(169, 1, 70, 1) 0%, rgba(123, 6, 155, 1) 100%);
+}
+
+.dropdown-menu {
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgba(169, 1, 70, 1) 0%, rgba(123, 6, 155, 1) 100%);
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-menu>li>a {
+    color: white !important;
+    font-size: 22px;
+    font-weight: 600;
+}
+.dropdown-menu>li:hover {
+    background-color: white;
+    border-radius: 28px;
+}
+.dropdown-menu>li >a:visited{
+    background-color: #860505;
+}
+
+.navbar-collapse button {
+   background-color: #f13b3b;
+   color: white;
+   border-radius: 30px;
+   font-weight: 700;
+   border: 2px solid white;
+   font-size: 21px;
+   animation-name: blinker;
+   animation-duration: 1s ;
+   animation-iteration-count: infinite;
+}
+
+.navbar-collapse button:hover {
+
+    background-color: rgb(111, 9, 206);
+}
+
+nav>div>a>h1 {
+    font-family: 'Courgette', cursive;
+}
+
+.navbar-collapse ul li a {
+    border-radius: 30px;
+    font-family: 'Baloo 2';
+}
+
+/* Modal Css */
+
+.modal-content {
+    background: linear-gradient(90deg, rgba(169, 1, 70, 1) 0%, rgba(123, 6, 155, 1) 100%);
+    border-radius: 22px;
+}
+
+.modalForm input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 3px solid white;
+    outline: none;
+    margin-left: 8px;
+    color: white;
+    font-family: 'Baloo 2';
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.modalForm label {
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+    font-family: 'Courgette', cursive;
+}
+
+.modalForm textarea {
+    border-radius: 33px;
+    width: 90%;
+    margin-top: 30px;
+    padding: 5px 14px;
+    min-height: 10rem;
+    outline: none;
+}
+
+.modalForm button {
+    border: 3px solid white;
+    background-color: transparent;
+    color: white;
+    margin-top: 16px;
+    border-radius: 33px;
+    font-size: 26px;
+    font-weight: 800;
+    padding: 7px 14px;
+}
+
+.modalForm label>button:hover {
+    transform: scale(.97);
+    border: 3px solid transparent;
+    color: rgba(123, 6, 155, 1);
+    background-color: white;
+}
+
+.modalForm select {
+    border-radius: 20px;
+    outline: none;
+    margin-left: 8px;
+    height: 40px;
+    width: 196px;
+}
+
+.modalForm option {
+    height: 40px;
+    width: 196px;
+}
+
+.modalForm :nth-child(4) {
+    margin-top: 12px;
+}
+
+.startingBox {
+    height: 40rem;
+    background-image: url('../images/mainbg.jpg');
+    padding-top: 6.6rem;
+    font-family: 'Times New Roman';
+    background-attachment: fixed;
+}
+
+.startingBox h3 {
+    font-family: 'Courgette', cursive;
+}
+
+.welcomeBox img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.welcomeBox>.row> :first-child {
+    background-image: url('../images/welcomeflowers.jpg');
+    background-size: cover;
+    min-height: 29rem;
+    border-radius: 20px;
+}
+
+.welcomeBox>.row> :first-child h6, .welcomeBox>.row> :last-child h6 {
+    font-size: 27px;
+    font-family: 'Courgette', cursive;
+    background-color: white;
+    width: 100%;
+    color: rgb(155, 6, 18);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.welcomeBox>.row> :last-child {
+    background-image: url('../images/decoration.jpg');
+    background-size: cover;
+    min-height: 29rem;
+    border-radius: 20px;
+}
+
+.welcomeBox>.row> :first-child h6:hover {
+    display: flex !important;
+}
+
+.welcomeBox .row :nth-child(2) h4 {
+    font-family: 'Courgette', cursive;
+    color: rgb(155, 6, 18);
+}
+
+.welcomeBox .row :nth-child(2) h5 {
+    font-family: 'Times New Roman';
+}
+
+.ownBtn {
+    text-decoration: none;
+    border: 3px solid transparent;
+    background-color: #860586;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-family: 'Courgette', cursive;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+.ownBtn:hover {
+    background-color: transparent;
+    color: #860586;
+    border: 3px solid #860586;
+}
+
+.packageCards .row div h5 {
+    font-family: 'Times New Roman';
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1.4px;
+    color: #860586;
+}
+
+.tColor {
+    color: #860586;
+}
+
+.packageCards .row div h4 {
+    font-family: 'Courgette', cursive;
+    color: #860530;
+    font-weight: 900;
+}
+
+.packageCards .row div h4 span {
+    color: black;
+}
+
+.packageCards .row div ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4px 8px;
+}
+
+.packageCards .row div ul li {
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-size: 26px;
+    border-bottom: 2px solid #860530;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.packageCards .row>div {
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.308);
+    border-radius: 22px;
+    padding: 15px 14px;
+}
+
+.packageCards .row div p {
+    text-align: center;
+    font-size: 23px;
+    font-family: 'Courgette', cursive;
+}
+
+.ourExp {
+    border-radius: 20px;
+}
+
+.ourExp h5 {
+    font-family: 'Times New Roman';
+}
+
+.ourExp p {
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 35px;
+}
+
+.ourExp>div div {
+    padding: 1px;
+    overflow: hidden;
+}
+
+.ourExp img {
+    width: 100%;
+    border-radius: 16px;
+    max-height: 13rem;
+}
+
+.ourExp img:hover {
+    transform: scale(1.2);
+    transition-duration: 200ms;
+}
+
+.bestWedding {
+    background-image: url('../images/bestwed.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 30rem;
+}
+
+.bestWedding h6 {
+    font-family: 'Courgette', cursive;
+}
+
+.bestWedding p {
+    font-family: 'Times New Roman';
+    word-spacing: 5px;
+}
+
+.testimonal h5 {
+    font-family: 'Times New Roman';
+    color: #860586;
+}
+
+.carousel-inner {
+    min-height: 32rem;
+    background: linear-gradient(90deg, rgba(169, 1, 70, 1) 0%, rgba(123, 6, 155, 1) 100%);
+    border-radius: 33px;
+}
+
+.carousel-inner p {
+    font-family: 'Courgette', cursive;
+    font-size: 22px;
+    text-align: center;
+    padding: 5px 200px;
+    color: white;
+}
+
+.carousel-item .row .col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.carousel-item .row .col img {
+    border-radius: 100px;
+    border: 5px solid white;
+    padding: 4px;
+}
+
+.carousel-item .row {
+    padding: 47px 20px;
+}
+
+.carousel-item .row .col h6 {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.imptEvent>:first-child h6 {
+    font-family: 'Times New Roman';
+    color: #860586;
+}
+
+.imptEvent>:last-child h6 {
+    font-family: 'Times New Roman';
+    margin-bottom: 10px;
+    font-size: 35px;
+}
+
+.imptEvent>:last-child>div {
+    border-radius: 33px;
+    border: 7px solid #860586;
+    padding: 20px;
+    color: #860536;
+}
+
+.imptEvent>:last-child>div:hover {
+    border: 0;
+    background: linear-gradient(90deg, rgba(169, 1, 70, 1) 0%, rgba(123, 6, 155, 1) 100%);
+    color: white;
+    transition-duration: 190ms;
+}
+
+.imptEvent>:last-child>div p {
+    font-family: 'Courgette', cursive;
+    font-size: 24px;
+}
+
+.imptEvent>:last-child>div img {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.ourTeam>div:nth-child(1)>div>h6 {
+    font-size: 38px;
+    font-weight: bold;
+    font-family: 'Times New Roman';
+    text-align: center;
+    color: #860570;
+}
+
+.ourTeam :last-child img {
+    border-radius: 100px;
+    border: 7px solid #860536;
+    padding: 4px;
+    width: 174px;
+}
+
+.ourTeam :nth-child(2) h5 {
+    font-size: 27px;
+    font-weight: 700;
+    color: #860586;
+    font-family: 'Courgette', cursive;
+    margin-top: 8px;
+}
+
+.ourTeam :last-child>div h6 {
+    font-size: 24px;
+    font-family: 'Times New Roman';
+    color: #727272;
+}
+
+.ourClients :first-child h6 {
+    font-family: 'Times New Roman';
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-weight: 700;
+    color: #860586;
+}
+
+.ourClients :last-child div {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.mapsec h6 {
+    color: #860586;
+    font-family: 'Times New Roman';
+}
+
+.gMap {
+    width: 100%;
+    min-height: 400px;
+    border-radius: 33px;
+}
+
+footer {
+    min-height: 4.4rem;
+    background-color: black;
+}
+
+footer h6 {
+    font-size: 25px;
+    color: #ff7ae9;
+    font-family: 'Courgette', cursive;
+}
+
+footer p {
+    font-size: 22px;
+    font-family: 'Times New Roman';
+    color: #e1c6ff;
+}
+
+footer i {
+    font-size: 34px;
+    color: #e1c6ff;
+    padding: 3px 10px;
+}
+footer a{
+    color: black;
+}
+
+.ft {
+    position: absolute;
+    bottom: 0px;
+}
+
+/* About Company us CSS Starts  */
+
+.aboutHead :first-child div {
+    background-image: url('../images/headimg.jpg');
+    min-height: 17rem;
+    padding-top: 8rem;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-shadow: 1px 1px 3px #860570, -1px -1px 3px #860570;
+    background-attachment: fixed;
+}
+.servicesHead :first-child div {
+    background-image: url('../images/headding2.jpg');
+    min-height: 17rem;
+    padding-top: 8rem;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    text-shadow: 1px 1px 3px #860570, -1px -1px 3px #860570;
+    background-attachment: fixed;
+}
+
+.aboutMain h2 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    color: #860530;
+}
+
+.aboutMain p {
+    font-size: 26px;
+    font-family: 'courgette';
+    margin-top: 20px;
+    color: #860586;
+    letter-spacing: 1.6px;
+}
+
+.aboutMain .row> :nth-child(2) {
+    overflow: hidden;
+    border-left: 2px solid #860530;
+}
+
+.aboutMain .row :nth-child(2) img {
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.aboutMain .row :nth-child(2) img:hover {
+    transform: scale(1.4);
+    transition-duration: 3s;
+}
+
+    /* Our Team Members Page Css Start */
+
+    .aboutOurteam :nth-child(2) > p{
+        font-family: 'courgette';
+        font-size: 27px;
+        color: #8200ce;
+    }
+   .aboutourClient h6 , h5{
+       font-size: 28px;
+       margin: 20px 0px;
+       color: #860586;
+       border-radius: 33px;
+       font-family: 'Times New Roman', Times, serif;
+       font-weight: 700;
+       padding-left: 30px;
+   }
+
+
+/* Services / Wedding Planer services CSS */
+
+.servicesWedplanner h4{
+    color: #c0085e;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 26px;
+    margin-top: 29px;
+    font-weight: 600;
+}
+.servicesWedplanner h4 span{
+    font-size: 30px;
+    font-family: serif;
+    color: #5c042d;
+}
+.servicesWedplanner h5{
+    font-family: 'courgette';
+    
+}
+
+  .servicesCatering h4{
+    color: #c0085e;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 26px;
+    margin-top: 29px;
+    font-weight: 600;
+  }
+  .photoGallery h2{
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      color: #c0085e;
+      font-weight: bold;
+      margin: 20px 0;
+  }
+  .photoGallery h3{
+    font-family: 'courgette';
+    margin-bottom: 30px;
+    color: #c0085e;
+    text-align: center;
+  }
+
+  .photoGallery img{
+      width: 100%;
+   
+      height: 15rem;
+      border-radius: 30px;
+  }
+  .photoGallery img:hover{
+      transform: scale(.97);
+  }
+  .photoGallery h6{
+      text-align: center;
+      color: #b639ff;
+    font-family: 'courgette';
+    font-size: 24px;
+    margin-top: 8px;
+  }
+
+  .photoGallery iframe{
+      height: 17rem;
+      width: 100%;
+      border-radius: 33px;
+  }
+
+
+
+/* Media Quries */
+
+@media (min-width: 1000px) {
+    .navbar-collapse ul li a:hover {
+        background-color: white;
+        color: #860586 !important;
+    }
+    .packageCards .row>div:hover {
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.418);
+      
+    }
+    .welcomeBox>.row> :first-child:hover, .welcomeBox>.row> :last-child:hover {
+        transform: scale(1.1);
+        transition-duration: 120ms;
+    }
+    .ourTeam :last-child>div:hover {
+        transform: scale(1.1);
+        transition-duration: 300ms;
+    }
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+}
+
+@media(max-width: 344px) {
+    .logo {
+        display: none;
+    }
+    nav>div>a>h1 {
+        font-size: 25px !important;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width:560px) {
+    .modalForm label {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:700px) {
+    .startingBox {
+        height: 30rem;
+    }
+    .carousel-inner p {
+        padding: 10px 20px;
+    }
+    .ourClients :last-child div img {
+        height: 200px;
+        width: 200px;
+    }
+    .aboutOurteam :nth-child(2) > h5, h6 ,p{
+        text-align: center;
+    }
+  
+
+}
+
+@media (max-width:1000px) {
+    .dropdown-menu>li>a {
+        color: white !important;
+        font-size: 17px;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 7px;
+    }
+ 
+    .dropdown-menu>li>a:hover{
+        background-color: white;
+     
+    }
+    .dropdown-menu > li  > a:visited{
+        background-color: white;
+        color: #860505 !important;
+    }
+    .dropdown-menu > li  > a{
+        background-color: white;
+        color: #860505 !important;
+    }
+    .dropdown-menu > li{
+        padding: 0px 10px;
+    }  
+    .contbox h6{
+        text-align: justify;
+    }  
+}
