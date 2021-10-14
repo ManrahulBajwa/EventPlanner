@@ -752,6 +752,9 @@ footer a{
     .fa-bars{
         font-size: 26px;
     }
+     .carousel-control-prev-icon , .carousel-control-next-icon{
+        visibility: hidden !important;
+    }
 
 }
 
