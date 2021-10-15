@@ -763,7 +763,7 @@ footer a{
         height: 30rem;
     }
     .carousel-inner p {
-        padding: 10px 20px;
+        padding: 0px 10px 51px 10px;
     }
     .ourClients :last-child div img {
         height: 200px;
