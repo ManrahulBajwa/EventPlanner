@@ -1,11 +1,9 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -18,9 +16,7 @@
     <!-- my CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
     <div class=" container-fluid signinbg signupbg">
         <div class="row">
             <div class="col">
@@ -28,29 +24,44 @@
             </div>
         </div>
         <div class="row align-items-center justify-content-center pb-4">
-            <form class="col-10 mt-2 boxeffect" onsubmit=" return">
+            <form class="col-10 mt-2 boxeffect" onsubmit=" return validate_rform()" action="#" method="" name="Register_form">
                 <h3>Sign Up</h3>
                 <div class="row d-flex flex-row justify-content-evenly">
                     <div class="col-md-5 mt-2  d-flex flex-column ">
-                        <label for="r_username">Username</label>
+                        <label for="r_username">Username
+                            <span class="error" id="r_usererror"></span>
+                        </label>
                         <input id="r_username" type="text">
-                        <label for="r_password">Password</label>
+                        <label for="r_password">Password
+                            <span class="error" id="r_perror"></span>
+                        </label>
                         <input id="r_password" type="password">
-                        <label for="rc_password">Confirm Password</label>
+                        <label for="rc_password">Confirm Password
+                            <span class="error" id="r_cperror"></span>
+                        </label>
                         <input id="rc_password" type="password">
-                        <label for="r_name">Name</label>
+                        <label for="r_name">Name
+                            <span class="error" id="r_nameerror"></span>
+                        </label>
                         <input id="r_name" type="text">
-                        <label for="r_email">Email</label>
+                        <label for="r_email">Email
+                            <span class="error" id="r_mailerror"></span>
+                        </label>
                         <input id="r_email" type="email">
                     </div>
                     <div class="col-md-5 mt-2  d-flex flex-column">
-                        <label for="religion">Religion</label>
-                        <input id="religion" type="text">
-                        <label for="number">Phone Number</label>
+                       
+                        <label for="number">Phone Number
+                            <span class="error" id="r_numbererror"></span>
+                        </label>
                         <input id="number" type="number">
-                        <label for="dob">DOB</label>
+                        <label for="dob">DOB
+                            <span class="error" id="r_doberror"></span>
+                        </label>
                         <input id="dob" type="date">
-                        <label id="gender">Gender</label>
+                        <label id="gender">Gender
+                            <span class="error" id="r_generror"></span>
+                        </label>
                         <div>
                             <label class="gender">Male
                                 <input id="male" name="gender" type="radio">
@@ -62,7 +73,7 @@
                     </div>
                 </div>
 
-                <a id="r_button" class="mybtn mx-auto" href="">Sign Up</a>
+                <button id="r_button" class="mybtn mx-auto" type="submit">Sign Up</button>
                 <div class="row">
                     <div class="col d-flex justify-content-between px-sm-5 h5 signinlink mt-4 ">
                         <b>Already have an Account?</b>
@@ -72,8 +83,6 @@
             </form>
         </div>
     </div>
-
-
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
